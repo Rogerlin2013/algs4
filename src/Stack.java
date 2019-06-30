@@ -53,6 +53,10 @@ public class Stack<Item> implements Iterable<Item> {
         return oldFirst.item;
     }
 
+    public Item peek() {
+       return first.item;
+    }
+
     private int N;
     private Node first;
     private class Node {
