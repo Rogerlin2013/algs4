@@ -3,7 +3,7 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class QueueClient {
     public static void main(String[] args) {
-        ResizingArrayQueueOfStrings queue = new ResizingArrayQueueOfStrings();
+        Queue2<String> queue = new Queue2<String>();
 
         while(!StdIn.isEmpty()) {
             String s = StdIn.readString();

@@ -12,10 +12,10 @@ public class HelloWorld {
             test.appendValue(i);
             test.appendValue(i);
         }
-        for (int i = 9; i > 0; i--) {
-            test.appendValue(i);
-            test.appendValue(i);
-        }
+//        for (int i = 9; i > 0; i--) {
+//            test.appendValue(i);
+//            test.appendValue(i);
+//        }
 //        StdOut.println(test.find(6));
 //        test.delete(1);
 //        test.delete(5);
@@ -24,13 +24,38 @@ public class HelloWorld {
 //        test.delete(9);
         test.printList();
 
-//        Node node = test.getNode(3);
+        Node node = test.getNode(1);
 //        if (removeAfter(node)){
 //            test.printList();
 //        }
-        test.remove(7);
+//        test.remove(7);
+        test.list = reverse2(node);
         test.printList();
-        StdOut.println(max2(test.list));
+//        StdOut.println(max2(test.list));
+    }
+
+    public static Node reverse(Node node) {
+        Node newHead = null;
+        Node curHead = node;
+
+        while(curHead != null) {
+            Node tempNode = curHead;
+            curHead = tempNode.next;
+            tempNode.next = newHead;
+            newHead = tempNode;
+        }
+        return newHead;
+    }
+
+    public static Node reverse2(Node node) {
+        Node subHead = node.next;
+        if (subHead == null) {
+            return node;
+        }
+        Node newSubHead = reverse2(subHead);
+        subHead.next = node;
+        node.next = null;
+        return newSubHead;
     }
 
     public static int max(Node node) {
