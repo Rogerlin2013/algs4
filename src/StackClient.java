@@ -3,6 +3,10 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class StackClient {
     public static void main(String[] args) {
+       testStack();
+    }
+
+    public static void testStack() {
         Stack<String> stack = new Stack<String>();
 
         while(!StdIn.isEmpty()) {

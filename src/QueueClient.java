@@ -3,6 +3,36 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class QueueClient {
     public static void main(String[] args) {
+        testResizingDeque();
+    }
+
+    public static void testResizingDeque() {
+        ResizingArrayDeque<Integer> deque = new ResizingArrayDeque<Integer>();
+
+        deque.pushLeft(2);
+        deque.pushRight(1);
+        deque.pushRight(3);
+        deque.pushLeft(4);
+        deque.pushRight(5);
+
+        for (Integer a: deque) {
+            StdOut.print(a + " ");
+        }
+    }
+
+    public static void testDeque() {
+        Deque<Integer> deque = new Deque<Integer>();
+
+        deque.pushLeft(2);
+        deque.pushRight(1);
+        deque.pushRight(3);
+        deque.pushLeft(4);
+
+        StdOut.println("pop " + deque.popRight());
+        deque.printList();
+    }
+
+    public static void testQueue() {
         Queue2<String> queue = new Queue2<String>();
 
         while(!StdIn.isEmpty()) {

@@ -145,7 +145,7 @@ public class DoublyLinkedList<Item> {
     private DoubleNode first;
     private DoubleNode last;
 
-    public class DoubleNode {
+    private class DoubleNode {
         DoubleNode previous;
         Item item;
         DoubleNode next;
