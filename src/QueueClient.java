@@ -3,7 +3,24 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class QueueClient {
     public static void main(String[] args) {
-        testResizingDeque();
+//        testResizingDeque();
+        testRandomQueue();
+    }
+
+    private static void testRandomQueue() {
+        RandomQueue<Integer> randomQueue = new RandomQueue<Integer>();
+
+        for (int i = 0; i < 10; ++i) {
+            randomQueue.enqueue(i);
+        }
+
+        for (int j = 0; j < 3; ++j) {
+            StdOut.println("dequeue " + randomQueue.deQueue());
+        }
+
+        for (int k : randomQueue) {
+            StdOut.print(k + " ");
+        }
     }
 
     public static void testResizingDeque() {
