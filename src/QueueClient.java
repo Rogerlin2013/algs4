@@ -5,7 +5,30 @@ public class QueueClient {
     public static void main(String[] args) {
 //        testResizingDeque();
 //        testRandomQueue();
-        testJosephus(2, 7);
+//        testJosephus(2, 7);
+        testGeneralizedQueue2();
+    }
+
+    private static void testGeneralizedQueue2() {
+        GeneralizedQueue2<Integer> queue = new GeneralizedQueue2<Integer>();
+        for (int i = 0; i < 10; ++i) {
+            queue.insert(i);
+        }
+
+        StdOut.println(queue.delete(3) + " ");
+        StdOut.println(queue.delete(3) + " ");
+
+        queue.printList();
+    }
+
+    private static void testGeneralizedQueue() {
+        GeneralizedQueue<Integer> queue = new GeneralizedQueue<Integer>();
+        for (int i = 0; i < 10; ++i) {
+            queue.insert(i);
+        }
+
+        StdOut.println(queue.delete(3) + " ");
+        StdOut.println(queue.delete(3) + " ");
     }
 
     private static void testJosephus(int m, int n) {
