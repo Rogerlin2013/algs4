@@ -4,7 +4,13 @@ import edu.princeton.cs.algs4.StdOut;
 public class QueueClient {
     public static void main(String[] args) {
 //        testResizingDeque();
-        testRandomQueue();
+//        testRandomQueue();
+        testJosephus(2, 7);
+    }
+
+    private static void testJosephus(int m, int n) {
+        Josephus josephus = new Josephus(n, m);
+        josephus.printQueue();
     }
 
     private static void testRandomQueue() {
