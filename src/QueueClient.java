@@ -6,7 +6,29 @@ public class QueueClient {
 //        testResizingDeque();
 //        testRandomQueue();
 //        testJosephus(2, 7);
-        testGeneralizedQueue2();
+//        testGeneralizedQueue2();
+        testRingBuffer();
+    }
+
+    private static void testRingBuffer() {
+        RingBuffer<Integer> queue = new RingBuffer<Integer>(8);
+
+        queue.enqueue(1);
+        queue.enqueue(2);
+        queue.enqueue(3);
+
+        StdOut.println("deQueue " + queue.deQueue());
+
+        for (int i = 4; i < 12; ++i) {
+            if (queue.isFull()) {
+                break;
+            }
+            queue.enqueue(i);
+        }
+
+        while (!queue.isEmpty()) {
+            StdOut.print(queue.deQueue() + " ");
+        }
     }
 
     private static void testGeneralizedQueue2() {
