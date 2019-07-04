@@ -7,7 +7,8 @@ public class QueueClient {
 //        testRandomQueue();
 //        testJosephus(2, 7);
 //        testGeneralizedQueue2();
-        testRingBuffer();
+//        testRingBuffer();
+        testCopyQueue();
     }
 
     private static void testRingBuffer() {
@@ -98,6 +99,28 @@ public class QueueClient {
 
         StdOut.println("pop " + deque.popRight());
         deque.printList();
+    }
+
+    private static void testCopyQueue() {
+        Queue<Integer> queue1 = new Queue<Integer>();
+
+        queue1.enqueue(1);
+        queue1.enqueue(2);
+
+        StdOut.print("Queue1: ");
+        queue1.printList();
+
+        Queue<Integer> queue2 = new Queue<Integer>(queue1);
+        StdOut.print("Queue2: ");
+        queue2.printList();
+
+        queue1.deQueue();
+
+        StdOut.print("Queue1: ");
+        queue1.printList();
+
+        StdOut.print("Queue2: ");
+        queue2.printList();
     }
 
     public static void testQueue() {

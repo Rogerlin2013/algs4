@@ -29,6 +29,21 @@ public class Stack<Item> implements Iterable<Item> {
     public Stack() {
     }
 
+    public Stack(Stack<Item> s) {
+        Stack<Item> temp = new Stack<Item>();
+
+        while (!s.isEmpty()) {
+            Item item = s.pop();
+            temp.push(item);
+        }
+
+        while (!temp.isEmpty()) {
+            Item item = temp.pop();
+            s.push(item);
+            this.push(item);
+        }
+    }
+
     public boolean isEmpty() {
         return N == 0;
     }

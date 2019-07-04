@@ -1,7 +1,21 @@
-
+import edu.princeton.cs.algs4.StdOut;
 
 public class Queue<Item> {
     public Queue() {
+    }
+
+    public Queue(Queue<Item> r) {
+        Queue<Item> k = new Queue<Item>();
+        while (!r.isEmpty()) {
+            Item item = r.deQueue();
+            k.enqueue(item);
+            this.enqueue(item);
+        }
+
+        while (!k.isEmpty()) {
+            Item item = k.deQueue();
+            r.enqueue(item);
+        }
     }
 
     public void enqueue(Item newNode) {
@@ -37,6 +51,15 @@ public class Queue<Item> {
 
     public int size() {
         return N;
+    }
+
+    public void printList() {
+        Node curNode = first;
+        while (curNode != null) {
+            StdOut.print(curNode.item + " ");
+            curNode = curNode.next;
+        }
+        StdOut.println();
     }
 
     private Node first;
