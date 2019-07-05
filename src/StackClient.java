@@ -5,7 +5,60 @@ public class StackClient {
     public static void main(String[] args) {
 //       testStack();
 //        testCopyStack();
-        testBuffer();
+//        testBuffer();
+//        StdOut.println(testStackUnderFlow());
+        StdOut.println(testPermutationValid());
+    }
+
+    private static boolean testPermutationValid() {
+        Stack<Integer> stack = new Stack<Integer>();
+        int nextToPush = 0;
+
+        while (!StdIn.isEmpty()) {
+            int i = StdIn.readInt();
+
+            if (i >= nextToPush) {
+                while (i >= nextToPush) {
+                    stack.push(nextToPush);
+                    if (i == nextToPush) {
+                        stack.pop();
+                    }
+                    nextToPush++;
+                }
+            }else {
+                if (stack.isEmpty()) {
+                    return false;
+                }
+
+                int j = stack.pop();
+                while (j != i) {
+                    if (stack.isEmpty()) {
+                        return false;
+                    }
+                    j = stack.pop();
+                }
+            }
+        }
+
+        return true;
+    }
+
+    private static boolean testStackUnderFlow() {
+        int N = 0;
+        while (!StdIn.isEmpty()) {
+            String s = StdIn.readString();
+
+            if (s.equals("-")) {
+                if (N == 0) {
+                    return true;
+                }
+                N--;
+            }else {
+                N++;
+            }
+        }
+
+        return false;
     }
 
     private static void testBuffer() {
