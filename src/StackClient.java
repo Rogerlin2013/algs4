@@ -4,7 +4,28 @@ import edu.princeton.cs.algs4.StdOut;
 public class StackClient {
     public static void main(String[] args) {
 //       testStack();
-        testCopyStack();
+//        testCopyStack();
+        testBuffer();
+    }
+
+    private static void testBuffer() {
+        Buffer buffer = new Buffer();
+
+        buffer.insert('a');
+        buffer.insert('b');
+        buffer.insert('c');
+        buffer.insert('d');
+        StdOut.println("current : " + buffer.get());
+
+        StdOut.println("delete : " + buffer.delete());
+        StdOut.println(buffer.size() + "char left");
+
+
+        buffer.left(2);
+        StdOut.println("current : " + buffer.get());
+
+        buffer.right(1);
+        StdOut.println("current : " + buffer.get());
     }
 
     private static void printStack(Stack<Integer> stack, String stackDes) {
