@@ -24,7 +24,7 @@
     <session id="1072352964">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="19" />
+          <entry key="project.closed" value="20" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
@@ -39,7 +39,7 @@
         <counts>
           <entry key="class" value="15" />
           <entry key="iml" value="1" />
-          <entry key="java" value="109" />
+          <entry key="java" value="111" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
@@ -47,19 +47,19 @@
         <counts>
           <entry key="CLASS" value="15" />
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="109" />
+          <entry key="JAVA" value="111" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="25035" />
+          <entry key="java" value="25517" />
           <entry key="txt" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="25035" />
+          <entry key="JAVA" value="25517" />
           <entry key="PLAIN_TEXT" value="30" />
         </counts>
       </usages-collector>
@@ -67,24 +67,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ListingFiles.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Buffer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/InsertParentheses.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -124,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Analysis/ThreeSum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+            <state relative-caret-position="20">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -142,13 +124,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Analysis/BinarySearch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="26" column="18" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="26" selection-end-column="18" />
+            <state relative-caret-position="364">
+              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Analysis/TwoSumFast.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Analysis/ClosestPair.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Analysis/StaticSETofInts.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
@@ -207,6 +207,7 @@
         <option value="$PROJECT_DIR$/src/Analysis/DoublingTest.java" />
         <option value="$PROJECT_DIR$/src/Analysis/BinarySearch.java" />
         <option value="$PROJECT_DIR$/src/Analysis/StaticSETofInts.java" />
+        <option value="$PROJECT_DIR$/src/Analysis/ClosestPair.java" />
       </list>
     </option>
   </component>
@@ -304,7 +305,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StaticSETofInts">
+  <component name="RunManager" selected="Application.ClosestPair">
     <configuration name="Analysis.ThreeSum" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Analysis.ThreeSum" />
       <module name="algs4" />
@@ -313,6 +314,12 @@
     </configuration>
     <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Analysis.BinarySearch" />
+      <module name="algs4" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ClosestPair" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Analysis.ClosestPair" />
       <module name="algs4" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
@@ -327,12 +334,6 @@
       <option name="MAIN_CLASS_NAME" value="Evaluate" />
       <module name="algs4" />
       <option name="PROGRAM_PARAMETERS" value="&lt; input.txt" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ListingFiles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ListingFiles" />
-      <module name="algs4" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2" />
     </configuration>
     <configuration name="QueueClient" type="Application" factoryName="Application">
@@ -363,18 +364,18 @@
       <item itemvalue="Application.QueueClient" />
       <item itemvalue="Application.Analysis.ThreeSum" />
       <item itemvalue="Application.StackClient" />
-      <item itemvalue="Application.ListingFiles" />
       <item itemvalue="Application.DoublingTest" />
       <item itemvalue="Application.BinarySearch" />
       <item itemvalue="Application.StaticSETofInts" />
+      <item itemvalue="Application.ClosestPair" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClosestPair" />
         <item itemvalue="Application.StaticSETofInts" />
         <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.DoublingTest" />
         <item itemvalue="Application.StackClient" />
-        <item itemvalue="Application.ListingFiles" />
       </list>
     </recent_temporary>
   </component>
@@ -388,7 +389,7 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2774275" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2774275" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39848676" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -410,10 +411,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Main.java" />
-    <entry file="file://$PROJECT_DIR$/out/production/algs4/HelloWorld.class">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/out/production/algs4/Evaluate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -667,13 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Analysis/ThreeSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Analysis/DoublingTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -681,17 +671,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Analysis/BinarySearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="26" column="18" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="26" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Analysis/StaticSETofInts.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="46" column="23" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Analysis/ThreeSum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Analysis/BinarySearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Analysis/TwoSumFast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Analysis/ClosestPair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
         </state>
       </provider>
     </entry>
