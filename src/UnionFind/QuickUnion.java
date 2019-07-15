@@ -36,8 +36,16 @@ public class QuickUnion {
     }
 
     public int find(int p) {
+        int s = p;
+
         while (p != id[p]) {
             p = id[p];
+        }
+
+        while (s != id[s]) {
+            int t = s;
+            s = id[s];
+            id[t] = p;
         }
         return p;
     }
